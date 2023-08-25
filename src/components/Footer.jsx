@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className='w-full min-h-20 mt-24 flex flex-row items-center justify-around  bg-slate-800 text-slate-50 text-xl py-4'>
+    <div className='w-full min-h-20 mt-24 flex flex-row items-center justify-around  bg-slate-800 text-slate-300 text-sm py-4 m-auto'>
         <div className=''>
           Kaio Deodato © 2023 - All rights reserved.
         </div>

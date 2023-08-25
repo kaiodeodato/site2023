@@ -18,7 +18,8 @@ export default function Projects() {
         image={foto}
         title='Coin World'
         content='Coinworld is a website that allows users to search for information about various cryptocurrencies in real-time. The website is designed to provide users with accurate and up-to-date information about the price, market cap, trading volume, and other key metrics of cryptocurrencies.'
-        tech='React.js • Tailwind • Router Dom • react-icons • RestApi • Json • HTML5 • Javascript • CSS3'
+        tech='Typescript • React.js • Tailwind • Router Dom • react-icons • RestApi • Json • HTML5  • CSS3'
+        git='https://github.com/kaiodeodato/coinworld'
       />
       <ProjectCardLeft
         link="https://vansshopclone.web.app/"
@@ -26,6 +27,8 @@ export default function Projects() {
         title='Vans Store Clone'
         content='A Vans store clone in React.js,a multi-page web application that replicates the online shopping experience of a Vans store. It utilizes React.js as the front-end library to create a dynamic and responsive user interface.'
         tech='Bootstrap • React.js • HTML5 • Javascript • CSS3 • JSON • Styled Components • RestApi • Nanoid'
+        git='https://github.com/kaiodeodato/vansshopclone'
+
       />
        <ProjectCardRight
           link="https://teste-8e6a1.web.app/"
@@ -33,6 +36,7 @@ export default function Projects() {
           title='Movie List'
           content='Entertainment movies website. Content includes releases, synopsis, trailers and screen stars. It has an extensive database with over 135,000 films and series. The site has daily automatic updates as well as showing trailers.'
           tech='Styled Components • React.js • HTML5 • Javascript • CSS3 • JSON • Router Dom • Bootstrap • RestApi • Firebase'
+          git='https://github.com/kaiodeodato/MoviesList'
       />
       <ProjectCardLeft
         link="https://kaiodeodato.github.io/carstar"
@@ -40,6 +44,7 @@ export default function Projects() {
         title='Car Star'
         content='CarStar is a portfolio website that presents a car rental service designed to provide a seamless and hassle-free experience. With a clean and modern interface, CarStar offers visitors a user-friendly platform to explore an extensive fleet of cars, make reservations, and access all the necessary information they need to rent a car.'
         tech='React.js • HTML5 • Javascript • Tailwind • CSS3 • JSON • Router Dom • RestApi'
+        git='https://github.com/kaiodeodato/carstar'
       />
       
     </div>

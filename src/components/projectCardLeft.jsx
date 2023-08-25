@@ -1,12 +1,9 @@
 import React from 'react'
 
 import { BsGithub } from "react-icons/bs";
-import { FcCollaboration, FcSmartphoneTablet, FcApproval } from "react-icons/fc";
 
 
-
-
-export default function ProjectCardLeft({title, content, tech, image, link}) {
+export default function ProjectCardLeft({title, content, tech, image, link,git}) {
   return (
     <div className='container  grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center m-auto'>
       
@@ -30,6 +27,12 @@ export default function ProjectCardLeft({title, content, tech, image, link}) {
             <span className='w-96 md:w-96 lg:w-97 mt-4 text-center md:text-start text-slate-400 p-2'>
               {tech}
             </span>
+            <a 
+            target='_blank' 
+            href={git} 
+            className='text-center text-slate-400 p-2 mt-2'>
+              <BsGithub size={40}/>
+            </a>
        </div>
     </div>
   )
