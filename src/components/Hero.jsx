@@ -20,7 +20,7 @@ export default function Hero() {
 
                 <h1 className='text-4xl  md:text-7xl bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text  text-transparent'>Front-End Developer</h1>
 
-                <span className='flex flex-row w-96 lg:w-97 text-center md:text-start p-3 md:p-0'>Hi, I'm Kaio Deodato. A passionate Front-end React Developer based in Portugal. </span>
+                <span className='flex flex-row w-96 lg:w-97 text-center md:text-start p-3 md:p-0'>Hi, I'm Kaio Deodato. A passionate Front-end React Developer based in Portugal </span>
                 
                 <div className='grid grid-cols-3 gap-8 mt-4 items-center'>
                     <a target='_blank' href="https://github.com/kaiodeodato?tab=repositories" title="GitHub">

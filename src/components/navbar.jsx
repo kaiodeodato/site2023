@@ -84,15 +84,6 @@ export default function Navbar() {
           </li>
         </ul>
       </div> 
-
-
-
-
-
-
-
-        
-
     </div>
   )
 }

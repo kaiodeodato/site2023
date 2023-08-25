@@ -40,10 +40,6 @@ function App() {
     
           </a>
       }
-          
-      
-        
-
         <Hero/>
         <About />
         <Education/>
