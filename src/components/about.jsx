@@ -36,10 +36,13 @@ export default function About() {
 
         <div className='flex flex-col  items-center md:items-start justify-center'>
       
-              <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 p-3 lg:p-0'>A dedicated Front-end Developer based in Portugal</h1>
-              <span className='w-96 md:w-96 lg:w-97 text-center md:text-start p-3 lg:p-0'>As a Junior Front-End Developer, I possess an arsenal of skills that includes HTML, CSS, JavaScript, React, Tailwind, Styles Components, amoung others. I excel in designing and maintaining <span className='text-orange-700 text-lg'>responsive websites</span> that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing <span className='text-orange-700 text-lg'>clean and optimized code</span>  and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in <span className='text-orange-700 text-lg'>collaborating</span> with cross-functional teams to produce outstanding</span>
+              <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 p-3 lg:p-0'>A dedicated data analyst based in Portugal</h1>
+              <p className='w-96 md:w-96 lg:w-97 text-center md:text-start p-3 lg:p-0'>Coming from a background in Fullstack development and graphic design, I have theoretical and practical knowledge in the development and implementation of projects, both within a team and as a standalone developer. I have experience working with a variety of tools, such as Python, MySQL, as well as other structured technologies like MongoDB, Cassandra, and other NoSQL technologies. I consistently prioritize writing clean code, adhering to best practices, and ensuring efficiency in my work.</p>
+              <p className='w-96 md:w-96 text-gray-600 lg:w-97 text-center md:text-start p-3 lg:p-0 mt-5'>I am a Power BI Desktop Certified Professional with extensive knowledge of data visualization best practices. I have experience creating interactive tools and static infographics that are suitable for online consumption or printing. In addition to Tableau, I have primarily worked with Tableau for my data visualization projects.</p>
+              
         </div>
       </div>
     </div>
   )
 }
+{/* <span className='text-orange-700 text-lg'>responsive websites</span> */}

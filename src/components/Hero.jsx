@@ -1,12 +1,14 @@
 import React from 'react'
 import foto from "../assets/foto.jpeg"
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { DiReact, DiCss3 } from "react-icons/di";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { DiReact, DiCss3, DiPython } from "react-icons/di";
+import { SiJavascript, SiTailwindcss, SiTypescript, SiTableau, SiPowerbi, SiApache } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiTypescript } from "react-icons/si";
 import { MdPictureAsPdf } from "react-icons/md";
+
+import { TbSql } from "react-icons/tb";
 import resume from "../assets/RESUME.pdf"
+
 
 export default function Hero() {
   return (
@@ -18,9 +20,9 @@ export default function Hero() {
 
             <div className='flex flex-col items-center lg:items-start justify-center mt-7  '>
 
-                <h1 className='text-4xl  md:text-7xl bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text  text-transparent'>Front-End Developer</h1>
+                <h1 className='text-4xl  md:text-7xl bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text  text-transparent'>Data Analyst</h1>
 
-                <span className='flex flex-row w-96 lg:w-97 text-center md:text-start p-3 md:p-0'>Hi, I'm Kaio Deodato. A passionate Front-end React Developer based in Portugal </span>
+                <span className='flex flex-row w-96 lg:w-97 text-center md:text-start p-3 md:p-0'>Hi, I'm Kaio Deodato. A passionate Data analysis based in Portugal. </span>
                 
                 <div className='grid grid-cols-3 gap-8 mt-4 items-center'>
                     <a target='_blank' href="https://github.com/kaiodeodato?tab=repositories" title="GitHub">
@@ -42,15 +44,15 @@ export default function Hero() {
                 <div className='flex flex-row items-center justify-center'>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <AiFillHtml5 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                    <TbSql size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
                  <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <DiCss3 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                    <DiPython size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiJavascript size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                    <SiTableau size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
@@ -58,11 +60,15 @@ export default function Hero() {
                 </div>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <DiReact size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                    <SiPowerbi size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiTailwindcss size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                    <SiApache size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                </div>
+
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <DiReact size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
             </div>
         </div>
