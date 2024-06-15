@@ -5,7 +5,6 @@ import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import About from './components/about';
-import { BsArrowUpCircleFill } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
 import Projects from './components/Projects';
 import Contact from './components/Contact';

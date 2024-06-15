@@ -2,14 +2,6 @@ import React from 'react'
 import EducationCard from './EducationCard';
 import MyCourse from './MyCourse';
 
-import certificadoHarvard from "../assets/certificadoHarvard.pdf"
-import certificadoMern from "../assets/certificadoMern.pdf"
-import certificadotypescript from "../assets/certificadotypescript.pdf"
-import certificadoReact from "../assets/certificadoReact.pdf"
-import certificadoNext from "../assets/certificadoNext.pdf"
-import certificadoNode from "../assets/certificadoNode.pdf"
-
-
 export default function Education() {
   return (
     <div id='education' className='container grid grid-col-3 items-center justify-center mt-14 m-auto ' >

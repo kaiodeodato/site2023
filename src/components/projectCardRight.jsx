@@ -1,6 +1,5 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
-import { SiApollographql  } from "react-icons/si";
 
 export default function ProjectCardRight({title, content, tech, image, link, git, smallPic, other}) {
   return (
