@@ -1,6 +1,5 @@
 import React from 'react'
 import foto from "../assets/pic1.jpg"
-import { BsGithub } from "react-icons/bs";
 import { FcCollaboration, FcSmartphoneTablet, FcApproval } from "react-icons/fc";
 
 
@@ -36,8 +35,8 @@ export default function About() {
 
         <div className='flex flex-col  items-center md:items-start justify-center'>
       
-              <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 p-3 lg:p-0'>A dedicated Front-end Developer based in Portugal</h1>
-              <span className='w-96 md:w-96 lg:w-97 text-center md:text-start p-3 lg:p-0'>As a Junior Front-End Developer, I possess an arsenal of skills that includes HTML, CSS, JavaScript, React, Tailwind, Styles Components, amoung others. I excel in designing and maintaining <span className='text-orange-700 text-lg'>responsive websites</span> that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing <span className='text-orange-700 text-lg'>clean and optimized code</span>  and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in <span className='text-orange-700 text-lg'>collaborating</span> with cross-functional teams to produce outstanding</span>
+              <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 p-3 lg:p-0'>A dedicated Software Engineer based in Portugal</h1>
+              <span className='w-96 md:w-96 lg:w-97 text-center md:text-start p-3 lg:p-0'>As a Software Engineer, I possess an arsenal of skills that includes .Net, C#, JavaScript, React, Tailwind, Styles Components, amoung others. I excel in designing and maintaining <span className='text-orange-700 text-lg'>responsive websites</span> that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing <span className='text-orange-700 text-lg'>clean and optimized code</span>  and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in <span className='text-orange-700 text-lg'>collaborating</span> with cross-functional teams to produce outstanding. I am not from a BackEnd background, but I have had the opportunity to contribute to several BackEnd projects and I am eager to learn more.</span>
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
+import { SiApollographql  } from "react-icons/si";
 
-
-export default function ProjectCardRight({title, content, tech, image, link,git}) {
+export default function ProjectCardRight({title, content, tech, image, link, git, smallPic, other}) {
   return (
     <div className='container  grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center m-auto'>
       
@@ -17,22 +17,36 @@ export default function ProjectCardRight({title, content, tech, image, link,git}
             <span className='w-96 md:w-96 lg:w-97 mt-4 text-center md:text-end text-slate-400 p-2'>
               {tech}
             </span>
-            <a 
-            target='_blank' 
-            href={git} 
-            className='text-center text-slate-400 p-2 mt-2'>
-              <BsGithub size={40}/>
-            </a>
+            <div className='flex'>
+              <a 
+              target='_blank' 
+              href={git} 
+              rel="noreferrer"
+              className='text-center text-slate-400 p-2 mt-2 hover:text-gray-600 duration-500'>
+                <BsGithub size={40}/>
+              </a>
+              {other && 
+                  (
+                    <div className='flex flex-row justify-center items-center'> 
+                      <a 
+                        target='_blank' 
+                        rel="noreferrer"
+                        href={other} 
+                        className='text-center text-2xl text-slate-400 p-2 mt-2 hover:text-gray-600 duration-500'>
+                        Endpoint
+                      </a>
+                      
+                    </div>
+                  )
+                }
+
+            </div>
             
        </div>
        <div className='order-1 md:order-2 p-5 flex flex-row md:justify-start justify-center items-end'>
-            <a target='_blank' href={link} className='shadow-xl h-96 overflow-hidden rounded-3xl'>
-                <img className=' rounded-3xl w-97 mt-0 hover:-mt-coin duration-10000 transition-all' src={image} alt="foto" />
+            <a target='_blank' rel="noreferrer" href={link} className='shadow-xl h-96 overflow-hidden rounded-3xl'>
+                <img className={`rounded-3xl w-97 mt-0 transition-all ${ !smallPic ? "hover:-mt-code duration-10000" : "hover:scale-105 duration-1000"}`} src={image} alt="foto" />
             </a>
-            
-            <div className='absolute flex translate translate-y-4 translate-x-4  md:translate-y-4 md:translate-x-4'>
-
-            </div>
        </div>
     </div>
   )

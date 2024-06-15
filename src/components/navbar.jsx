@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div id='home' className='z-10  container  m-auto flex flex-row mt-5 rounded-full  items-center justify-between pt-4'>
 
-        <a href='#' className='text-2xl text-slate-700  hover:text-slate-400 transition-colors font-bold  pl-5'>Kaio D.</a>
+        <span className='text-2xl text-slate-700  hover:text-slate-400 transition-colors font-bold  pl-5'>Kaio D.</span>
 
         <button
         type="button"
