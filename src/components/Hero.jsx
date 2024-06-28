@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div  className='container grid grid-cols-1 items-center justify-center mt-14 m-auto'>
         <div className=' grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center m-auto '>
-            <div className=' flex flex-row items-center justify-center '>
+            <div className=' flex flex-row items-center justify-center m-2 sm:m-1 p-4 sm:p-1'>
                 <img className=' w-96 border-move ' src={foto} alt="" />
             </div>
 
@@ -37,9 +37,9 @@ export default function Hero() {
             </div>
             
         </div>
-            <div className='flex flex-col md:flex-row items-center justify-center mt-20 text-xl '>
-                <div className='mr-5'>Tech Stack</div>
-
+        <div className='flex flex-col items-center justify-center mt-20 text-xl '>
+            <div className='mr-5'>Tech Stack</div>
+            <div className='grid grid-cols-4 md:grid-cols-8 gap-4 mt-5'>
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
                     <SiDotnet size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
@@ -47,9 +47,7 @@ export default function Hero() {
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
                     <TbBrandCSharp size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
-
-                <div className='flex flex-row items-center justify-center'>
-
+                
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
                     <SiJavascript size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
@@ -66,15 +64,13 @@ export default function Hero() {
                     <AiFillHtml5 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
-                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
                     <DiCss3 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
 
                 <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
                     <SiTailwindcss size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
                 </div>
-
-                
             </div>
         </div>
     </div>

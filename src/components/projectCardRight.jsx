@@ -24,7 +24,7 @@ export default function ProjectCardRight({title, content, tech, image, link, git
               className='text-center text-slate-400 p-2 mt-2 hover:text-gray-600 duration-500'>
                 <BsGithub size={40}/>
               </a>
-              {other && 
+              {other &&  
                   (
                     <div className='flex flex-row justify-center items-center'> 
                       <a 
