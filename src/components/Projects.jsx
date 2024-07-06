@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
 
-// Importe todas as suas imagens aqui
 import foto from "../assets/sitecoin.jpg";
 import foto2 from "../assets/sitevans2.jpg";
 import foto3 from "../assets/sitemovies.jpg";
@@ -13,7 +11,7 @@ import ProjectCardRight from './projectCardRight';
 import ProjectCardLeft from './projectCardLeft';
 
 export default function Projects() {
-  // Função para pré-carregar as imagens
+
   const preloadImages = (images) => {
     images.forEach(image => {
       const img = new Image();
@@ -22,10 +20,8 @@ export default function Projects() {
   };
 
   useEffect(() => {
-    // Array contendo todas as URLs das imagens
     const imagesToPreload = [foto, foto2, foto3, foto4, foto5, foto6, foto7];
 
-    // Chama a função para pré-carregar as imagens
     preloadImages(imagesToPreload);
   }, []);
 
