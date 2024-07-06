@@ -7,6 +7,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { SiTypescript, SiDotnet } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import resume from "../assets/RESUME.docx"
+import Button3D from './Button3D';
 
 export default function Hero() {
   return (
@@ -29,9 +30,17 @@ export default function Hero() {
                     <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/kaio-viana-6ab42016b/" title="LinkedIn">
                         <BsLinkedin size={28} className='transition-colors cursor-pointer text-orange-700 hover:text-blue-900'/>
                     </a>
-                    <a className='bg-orange-700 flex flex-row justify-center items-center p-2 rounded-md font-bold text-gray-100 hover:bg-blue-900' target='_blank' download="Kaio Deodato-Front-End-CV" rel="noreferrer" href={resume} title="Resume">
-                        RESUME
-                    </a>
+                    <Button3D
+                        className='flex flex-row justify-center items-center p-2 rounded-md font-bold text-gray-100'
+                        width="100px"
+                        height="50px"
+                        borderRadius="10px"
+                        background=""
+                        >
+                        <a className="cursor-pointer" target='_blank' download="Kaio Deodato-Front-End-CV" rel="noreferrer" href={resume} title="Resume">
+                            RESUME
+                        </a>
+                    </Button3D>
                 </div>
                 
             </div>

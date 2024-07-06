@@ -1,0 +1,32 @@
+:root {
+    --pink: hsl(338, 70%, 55%);
+    --teal: hsl(183, 70%, 62%);
+    --white: hsl(334, 7%, 95%);
+  }
+  
+  .button3D {
+    transform-style: preserve-3d;
+    transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+
+    width: var(--width, 200px); /* Default width */
+    height: var(--height, 50px); /* Default height */
+    border-radius: var(--border-radius, 10px); /* Default border radius */
+    position: relative;
+  }
+  
+  .button3D > * {
+    text-shadow: 0 0 0.3em currentColor;
+  }
+  
+  .button3D::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    /* background: linear-gradient(-45deg, rgb(4, 4, 153), rgb(232, 70, 42)); */
+    background: var(--background, linear-gradient(-45deg, rgb(4, 4, 153), rgb(232, 70, 42)));
+    transform: translateZ(-10px);
+    z-index: -1;
+  }
+  
