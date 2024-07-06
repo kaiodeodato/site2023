@@ -3,7 +3,7 @@ import { FaCertificate } from "react-icons/fa";
 
 export default function MyCourse({ title, content, institution, certificate}) {
   return (
-    <div className='relative shadow-lg container w-44 md:w-60 h-52 bg-blue-900 grid grid-cols-1  items-center justify-center rounded-3xl'>
+    <div className='relative shadow-lg container w-44 md:w-60 h-52 bg-blue-900 hover:bg-blue-950 duration-500 grid grid-cols-1  items-center justify-center rounded-3xl'>
 
       <div className='absolute top-0 right-0 translate-x-5 -translate-y-3 flex justify-center items-center'>
         <FaCertificate className='mx-3 iconflip text-yellow-500 absolute ' size="40"/>

@@ -17,7 +17,7 @@ export default function ProjectCardLeft({title, content, tech, image, link, git,
 
             </div>
        </div>
-       <div className='flex flex-col  items-center md:items-start justify-center'>
+       <div className='flex flex-col  items-center md:items-start justify-center cursor-default'>
             
             <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97'>
               {title}

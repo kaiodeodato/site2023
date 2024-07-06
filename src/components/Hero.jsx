@@ -49,36 +49,36 @@ export default function Hero() {
         <div className='flex flex-col items-center justify-center mt-20 text-xl '>
             <div className='mr-5'>Tech Stack</div>
             <div className='grid grid-cols-4 md:grid-cols-8 gap-4 mt-5'>
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiDotnet size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <SiDotnet size={35} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <TbBrandCSharp size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <TbBrandCSharp size={32} className='cursor-default mx-2'/>
                 </div>
                 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiJavascript size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <SiJavascript size={32} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiTypescript size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <SiTypescript size={32} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <DiReact size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <DiReact size={35} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <AiFillHtml5 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <AiFillHtml5 size={32} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <DiCss3 size={32} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <DiCss3 size={32} className='cursor-default mx-2'/>
                 </div>
 
-                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
-                    <SiTailwindcss size={35} className='transition-colors cursor-default text-orange-900 hover:text-blue-900 mx-2'/>
+                <div className='shadow-md mr-2 flex flex-row items-center justify-center bg-slate-100 hover:bg-blue-950 text-orange-900 hover:text-slate-100 duration-500 w-12 lg:w-16 h-12 lg:h-16 rounded-full'>
+                    <SiTailwindcss size={35} className='cursor-default mx-2'/>
                 </div>
             </div>
         </div>

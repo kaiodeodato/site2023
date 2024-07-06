@@ -24,8 +24,8 @@ export default function Contact() {
     <div id='contact' className='container grid grid-cols-1 gap-4 items-center justify-center mt-20 m-auto'>
       <h1 className='pt-3 text-slate-600 text-center font-bold text-4xl'>Contact</h1>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 items-center justify-center rounded-lg w-96 md:w-full h-28 bg-slate-100 m-auto text-2xl text-slate-500'>
-        <h1 className='text-center'>Don't be shy! Hit me a Hi!</h1>
+      <div className='grid grid-cols-1 md:grid-cols-3 items-center justify-center rounded-lg w-96 md:w-full h-32 bg-slate-100 m-auto  text-slate-500'>
+        <h1 className='text-center text-xl'>Let's Talk About Your Project</h1>
         <div className='flex flex-row items-center justify-center w-16 h-16 rounded-full m-auto hover:scale-105 transition-transform duration-700'>
 
 
@@ -43,7 +43,7 @@ export default function Contact() {
 
           
         </div>
-        <h1 className='text-center'>kaiod.oficial@gmail.com</h1>
+        <h1 className='text-center text-xl'>kaiod.oficial@gmail.com</h1>
       </div>
     </div>
   );

@@ -5,9 +5,9 @@ export default function ProjectCardRight({title, content, tech, image, link, git
   return (
     <div className='container  grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center m-auto'>
       
-       <div className='flex flex-col order-2 mg:order-1 items-center md:items-end justify-center'>
+       <div className='flex flex-col order-2 mg:order-1 items-center md:items-end justify-center cursor-default'>
             
-            <h1 className='bg-gradient-to-r to-orange-700 from-indigo-900 bg-clip-text text-center md:text-end mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 '>
+            <h1 className='bg-gradient-to-r to-orange-700 from-indigo-900 bg-clip-text text-center md:text-end mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97'>
               {title}
             </h1>
             <span className='w-96 md:w-96 lg:w-97 text-center md:text-end p-2'>
