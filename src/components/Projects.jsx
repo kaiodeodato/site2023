@@ -44,15 +44,13 @@ export default function Projects() {
         tech='Bootstrap • React.js • HTML5 • Javascript • CSS3 • JSON • Styled Components • RestApi • Nanoid'
         git='https://github.com/kaiodeodato/vansshopclone'
       />
-      <ProjectCardRight
-        link="https://dash.kaiodeodato.com/"
-        image={foto7}
-        title='Dashboard TradeBoard'
-        content="Construction of a portal for monitoring and analyzing investments in shares, including interactive dashboard..."
-        tech='Php • React.js • SQL • Javascript • HTML5 • CSS3 • Cpanel • RestFul API • TailwindCSS • Material UI'
-        git='https://github.com/kaiodeodato/dashtrade'
-        smallPic={true}
-        other='https://dashapi.kaiodeodato.com/'
+    <ProjectCardRight
+        link="https://teste-8e6a1.web.app/"
+        image={foto3}
+        title='Movie List'
+        content='Entertainment movies website. Content includes releases, synopsis, trailers and screen stars. It has an extensive database with over 135,000 films and series...'
+        tech='Styled Components • React.js • HTML5 • Javascript • CSS3 • JSON • Router Dom • Bootstrap • RestApi • Firebase'
+        git='https://github.com/kaiodeodato/MoviesList'
       />
       <ProjectCardLeft
         link="https://kaiodeodato.github.io/carstar"
@@ -79,14 +77,7 @@ export default function Projects() {
         git='https://github.com/kaiodeodato/ShakeBlazor'
         other='https://nodegraphql-tog7.onrender.com'
       />
-      <ProjectCardRight
-        link="https://teste-8e6a1.web.app/"
-        image={foto3}
-        title='Movie List'
-        content='Entertainment movies website. Content includes releases, synopsis, trailers and screen stars. It has an extensive database with over 135,000 films and series...'
-        tech='Styled Components • React.js • HTML5 • Javascript • CSS3 • JSON • Router Dom • Bootstrap • RestApi • Firebase'
-        git='https://github.com/kaiodeodato/MoviesList'
-      />
+  
     </div>
   )
 }
