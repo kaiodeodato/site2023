@@ -11,7 +11,7 @@ module.exports = {
       },
       margin: {
         'coin': '46rem',
-        'code': '24rem',
+        'code': '19rem',
       },
       transitionDuration: {
         '10000': '10000ms',

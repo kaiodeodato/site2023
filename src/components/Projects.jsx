@@ -6,7 +6,7 @@ import foto3 from "../assets/sitemovies.jpg";
 import foto4 from "../assets/sitecarstar.jpg";
 import foto5 from "../assets/opencode.png";
 import foto6 from "../assets/siteeagle.png";
-import foto7 from "../assets/dash.png";
+import foto7 from "../assets/clubs.png";
 import ProjectCardRight from './projectCardRight';
 import ProjectCardLeft from './projectCardLeft';
 
@@ -76,6 +76,14 @@ export default function Projects() {
         tech='DotNet • Blazor • GraphQL • Strawberry Shake • Apollo Server • Node.js • MongoDB • C# • Javascript • CSS3 • HTML5 • JSON'
         git='https://github.com/kaiodeodato/ShakeBlazor'
         other='https://nodegraphql-tog7.onrender.com'
+      />
+      <ProjectCardRight
+        link="https://clubs-network.vercel.app/"
+        image={foto7}
+        title='Social Media Platform'
+        content="Social network of posts with text limits that provides interactions such as liking, following and commenting. For security and maintenance purposes, the Mongo DB database is reset every day at 10:00 GMT through a device developed with node and githubActions"
+        tech='Tailwind • Node.js • Next.js • MongoDB • Javascript • CSS3 • HTML5 • Github Actions'
+        git='https://github.com/kaiodeodato/clubsNetwork'
       />
   
     </div>
