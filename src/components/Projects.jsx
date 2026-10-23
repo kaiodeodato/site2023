@@ -1,91 +1,86 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
+import foto from '../assets/sitecoin.jpg'
+import foto2 from '../assets/sitevans2.jpg'
+import foto3 from '../assets/sitemovies.jpg'
+import foto4 from '../assets/sitecarstar.jpg'
+import foto5 from '../assets/opencode.png'
+import foto6 from '../assets/siteeagle.png'
+import foto7 from '../assets/clubs.png'
+import ProjectCard from './ProjectCard'
 
-import foto from "../assets/sitecoin.jpg";
-import foto2 from "../assets/sitevans2.jpg";
-import foto3 from "../assets/sitemovies.jpg";
-import foto4 from "../assets/sitecarstar.jpg";
-import foto5 from "../assets/opencode.png";
-import foto6 from "../assets/siteeagle.png";
-import foto7 from "../assets/clubs.png";
-import ProjectCardRight from './projectCardRight';
-import ProjectCardLeft from './projectCardLeft';
+const projects = [
+  {
+    link: 'https://kaiodeodato.github.io/coinworld/',
+    image: foto,
+    title: 'Coin World',
+    content:
+      'A cryptocurrency explorer that pulls live market data from external APIs so users can search and review coin information in real time. The main technical focus is reliable REST integration and presenting dynamic data clearly in a React TypeScript UI.',
+    tech: 'TypeScript • React • Tailwind • React Router • REST API',
+    git: 'https://github.com/kaiodeodato/coinworld',
+  },
+  {
+    link: 'https://clubs-network.vercel.app/',
+    image: foto7,
+    title: 'Social Media Platform',
+    content:
+      'A social network for short posts with likes, follows, and comments. Built as a full-stack app with persistent data in MongoDB. For security and maintenance, the database is reset daily at 10:00 GMT through a Node.js job triggered by GitHub Actions.',
+    tech: 'Next.js • Node.js • MongoDB • Tailwind • JavaScript • GitHub Actions',
+    git: 'https://github.com/kaiodeodato/clubsNetwork',
+    featured: true,
+  },
+  {
+    link: 'https://vansshopclone.web.app/',
+    image: foto2,
+    title: 'Vans Store Clone',
+    content:
+      'A multi-page e-commerce interface inspired by the Vans store experience. Focused on reusable UI components, client-side navigation, and a shopping-oriented layout built with React and styled components.',
+    tech: 'React • JavaScript • Bootstrap • Styled Components • REST API',
+    git: 'https://github.com/kaiodeodato/vansshopclone',
+  },
+  {
+    link: 'https://kaiodeodato.github.io/carstar',
+    image: foto4,
+    title: 'Car Star',
+    content:
+      'A portfolio site for a car rental concept, designed to present vehicles and a smooth browsing experience. Built with React and Tailwind, with client-side routing and structured content for a service-oriented UI.',
+    tech: 'React • JavaScript • Tailwind • React Router',
+    git: 'https://github.com/kaiodeodato/carstar',
+  },
+  {
+    link: 'https://teste-8e6a1.web.app/',
+    image: foto3,
+    title: 'Movie List',
+    content:
+      'An entertainment catalog for browsing movies and series, including releases, synopses, trailers, and cast information. Integrates with a large external dataset (over 135,000 titles) and supports search and navigation across a substantial catalog.',
+    tech: 'React • JavaScript • Styled Components • Bootstrap • React Router • REST API • Firebase',
+    git: 'https://github.com/kaiodeodato/MoviesList',
+  },
+]
 
 export default function Projects() {
-
-  const preloadImages = (images) => {
-    images.forEach(image => {
-      const img = new Image();
-      img.src = image;
-    });
-  };
-
   useEffect(() => {
-    const imagesToPreload = [foto, foto2, foto3, foto4, foto5, foto6, foto7];
-
-    preloadImages(imagesToPreload);
-  }, []);
+    ;[foto, foto2, foto3, foto4, foto5, foto6, foto7].forEach((src) => {
+      const img = new Image()
+      img.src = src
+    })
+  }, [])
 
   return (
-    <div id='projects' className='container grid grid-cols-1 gap-10 items-center justify-center mt-20 m-auto'>
-      <h1 className='mt-14 text-slate-600 text-center font-bold text-4xl mx-auto'>Projects</h1>
-      <ProjectCardRight
-        link="https://kaiodeodato.github.io/coinworld/"
-        image={foto}
-        title='Coin World'
-        content='Coinworld is a website that allows users to search for information about various cryptocurrencies in real-time...'
-        tech='Typescript • React.js • Tailwind • Router Dom • react-icons • RestApi • Json • HTML5  • CSS3'
-        git='https://github.com/kaiodeodato/coinworld'
-      />
-      <ProjectCardLeft
-        link="https://vansshopclone.web.app/"
-        image={foto2}
-        title='Vans Store Clone'
-        content='A Vans store clone in React.js, a multi-page web application that replicates the online shopping experience of a Vans store...'
-        tech='Bootstrap • React.js • HTML5 • Javascript • CSS3 • JSON • Styled Components • RestApi • Nanoid'
-        git='https://github.com/kaiodeodato/vansshopclone'
-      />
-    <ProjectCardRight
-        link="https://teste-8e6a1.web.app/"
-        image={foto3}
-        title='Movie List'
-        content='Entertainment movies website. Content includes releases, synopsis, trailers and screen stars. It has an extensive database with over 135,000 films and series...'
-        tech='Styled Components • React.js • HTML5 • Javascript • CSS3 • JSON • Router Dom • Bootstrap • RestApi • Firebase'
-        git='https://github.com/kaiodeodato/MoviesList'
-      />
-      <ProjectCardLeft
-        link="https://kaiodeodato.github.io/carstar"
-        image={foto4}
-        title='Car Star'
-        content='CarStar is a portfolio website that presents a car rental service designed to provide a seamless and hassle-free experience...'
-        tech='React.js • HTML5 • Javascript • Tailwind • CSS3 • JSON • Router Dom • RestApi'
-        git='https://github.com/kaiodeodato/carstar'
-      />
-      <ProjectCardRight
-        link="http://opencode.somee.com/"
-        image={foto5}
-        title='Open Code'
-        content="Project using the ASP.NET Core stack to maintain control and organization over important topics throughout my career..."
-        tech='Tailwind • DotNet • MongoDB • C# • Javascript • CSS3 • HTML5 • JSON'
-        git='https://github.com/kaiodeodato/OpenCode'
-      />
-      <ProjectCardLeft
-        link="https://kaiodeodato.github.io/ShakeBlazor"
-        image={foto6}
-        title='Eagle Plataform'
-        content="Advertising website project made in two parts, the first is a graphql endpoint built with node and apollo server in the back end..."
-        tech='DotNet • Blazor • GraphQL • Strawberry Shake • Apollo Server • Node.js • MongoDB • C# • Javascript • CSS3 • HTML5 • JSON'
-        git='https://github.com/kaiodeodato/ShakeBlazor'
-        other='https://nodegraphql-tog7.onrender.com'
-      />
-      <ProjectCardRight
-        link="https://clubs-network.vercel.app/"
-        image={foto7}
-        title='Social Media Platform'
-        content="Social network of posts with text limits that provides interactions such as liking, following and commenting. For security and maintenance purposes, the Mongo DB database is reset every day at 10:00 GMT through a device developed with node and githubActions"
-        tech='Tailwind • Node.js • Next.js • MongoDB • Javascript • CSS3 • HTML5 • Github Actions'
-        git='https://github.com/kaiodeodato/clubsNetwork'
-      />
-  
-    </div>
+    <section id="projects" className="py-16 section-shell scroll-mt-24 md:py-20">
+      <div className="mb-10 text-center">
+        <h2 className="section-title">Featured Projects</h2>
+        <p className="section-subtitle">
+          Personal projects that demonstrate API integration, application structure, UI
+          implementation, and operational maintenance. Distinct from the professional case studies
+          above.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </div>
+    </section>
   )
 }

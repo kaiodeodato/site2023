@@ -1,44 +1,50 @@
 import React from 'react'
-import foto from "../assets/pic1.jpg"
-import { FcCollaboration, FcSmartphoneTablet, FcApproval } from "react-icons/fc";
-
-
-
+import { Card } from 'flowbite-react'
+import foto from '../assets/pic1.jpg'
 
 export default function About() {
   return (
-    <div id='about' className='pt-28'>
-      <h1 className=' text-slate-600 text-center  font-bold text-4xl mx-auto '>About Me</h1>
-
-      <div className='container  grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center mt-10  m-auto'>
-
-      
-        
-        <div className='p-5 flex flex-row md:justify-end justify-center items-end '>
-              <img className='shadow-xl rounded-3xl w-97 ' src={foto} alt="foto" />
-              <div className='absolute flex translate translate-y-4 translate-x-4  md:translate-y-4 md:translate-x-4'>
-
-                <div className='icon1 w-14 h-14 flex flex-row items-center justify-center bg-slate-100 rounded-full shadow-lg mx-2 text-orange-900'>
-                  <FcSmartphoneTablet size={30}/>
-                </div>
-
-                <div className='icon2 w-14 h-14 flex flex-row items-center justify-center bg-slate-100 rounded-full shadow-lg mx-2 text-orange-900'>
-                  < FcApproval size={30} />
-                </div>
-
-                <div className='icon1 w-14 h-14 flex flex-row items-center justify-center bg-slate-100 rounded-full shadow-lg mx-2 text-orange-900'>
-                  <FcCollaboration size={30}/>
-                </div>
-
-              </div>
-        </div>
-
-        <div className='flex flex-col  items-center md:items-start justify-center'>
-      
-              <h1 className='bg-gradient-to-r from-orange-700 to-indigo-900 bg-clip-text text-center md:text-start mb-5 text-transparent font-bold text-4xl w-96 md:w-96 lg:w-97 p-3 lg:p-0'>A dedicated Software Engineer based in Portugal</h1>
-              <span className='w-96 md:w-96 lg:w-97 text-center md:text-start p-3 lg:p-0'>As a Software Engineer, I possess an arsenal of skills that includes .Net, C#, JavaScript, React, Tailwind, Styles Components, amoung others. I excel in designing and maintaining <span className='text-orange-700 text-lg'>responsive websites</span> that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing <span className='text-orange-700 text-lg'>clean and optimized code</span>  and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in <span className='text-orange-700 text-lg'>collaborating</span> with cross-functional teams to produce outstanding. I am not from a BackEnd background, but I have had the opportunity to contribute to several BackEnd projects and I am eager to learn more.</span>
-        </div>
+    <section id="about" className="section-shell scroll-mt-24 py-16 md:py-20">
+      <div className="mb-10 text-center">
+        <h2 className="section-title">About Me</h2>
+        <p className="section-subtitle">
+          Full stack engineer focused on maintainable systems and practical outcomes.
+        </p>
       </div>
-    </div>
+
+      <Card className="surface-card overflow-hidden">
+        <div className="grid gap-8 md:grid-cols-2 md:items-center">
+          <img
+            src={foto}
+            alt="Kaio Deodato"
+            className="h-72 w-full rounded-xl object-cover shadow-md shadow-black/40 md:h-80"
+          />
+          <div>
+            <h3 className="gradient-text mb-4 text-2xl font-bold md:text-3xl">
+              Software Developer based in Viseu, Portugal
+            </h3>
+            <div className="space-y-4 text-slate-300">
+              <p>
+                I am a Software Developer with over five years of experience in web and full stack
+                development, working in international and remote environments across Europe and Africa.
+                My work spans <span className="font-semibold text-orange-300">C# and .NET</span>,{' '}
+                <span className="font-semibold text-orange-300">Blazor</span>,{' '}
+                <span className="font-semibold text-orange-300">TypeScript</span>, and{' '}
+                <span className="font-semibold text-orange-300">React</span>.
+              </p>
+              <p>
+                I focus on building and improving production systems: automation platforms, APIs,
+                and modern web interfaces. I care about maintainability, reliability, clean code,
+                and practical business outcomes.
+              </p>
+              <p>
+                I am currently pursuing a BSc in Computer Engineering at ESTGV – Instituto
+                Politécnico de Viseu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </section>
   )
 }

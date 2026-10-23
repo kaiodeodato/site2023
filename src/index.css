@@ -2,51 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
+body {
+  font-family: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  background-color: #020617;
+  color: #e2e8f0;
+  background-image:
+    radial-gradient(ellipse at top left, rgba(251, 146, 60, 0.12), transparent 42%),
+    radial-gradient(ellipse at bottom right, rgba(99, 102, 241, 0.10), transparent 40%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    background: radial-gradient(#c5d0de, #f3f5f6);
-    scroll-behavior: smooth !important;
+@layer components {
+  .section-shell {
+    @apply w-full max-w-6xl px-4 mx-auto sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-slate-50 md:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply max-w-2xl mx-auto mt-3 text-base text-slate-300 md:text-lg;
+  }
+
+  .gradient-text {
+    @apply text-orange-300;
+  }
+
+  .surface-card {
+    @apply !border-slate-700 !bg-slate-900 !text-slate-200 shadow-lg shadow-black/30;
+  }
 }
-.border-move{
-    border-radius: 50px 200px 20px 110px;
-    animation: bordersmove 20s infinite;
-    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.485));
+
+.border-move {
+  border-radius: 40% 60% 55% 45%;
+  animation: bordersmove 18s ease-in-out infinite;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.55));
 }
+
 @keyframes bordersmove {
-    0%{border-radius: 270px 260px 260px 390px;}
-    20%{border-radius: 290px 420px 360px 450px;}
-    40%{border-radius: 250px 320px 500px 290px;}
-    60%{border-radius: 350px 230px 300px 330px;}
-    80%{border-radius: 250px 270px 300px 240px;}
-    100%{border-radius: 270px 260px 260px 390px;}
-}
-.icon1{
-    animation: move1 5s infinite;
-}
-.icon2{
-    animation: move2 5s infinite;
-}
-@keyframes move1 {
-    0%{transform: translate(0px,10px);}
-    50%{transform: translate(0px,-10px);}
-    100%{transform: translate(0px,10px);}
-}
-@keyframes move2 {
-    0%{transform: translate(0px,-10px);}
-    50%{transform: translate(0px,10px);}
-    100%{transform: translate(0px,-10px);}
-}
-.iconflip{
-    animation: flip 15s infinite;
-}
-@keyframes flip {
-    0%{transform: rotate(0deg)}
-    50%{transform: rotate(360deg)}
-    100%{transform: rotate(0deg)}
+  0% { border-radius: 42% 58% 52% 48%; }
+  25% { border-radius: 55% 45% 60% 40%; }
+  50% { border-radius: 48% 52% 40% 60%; }
+  75% { border-radius: 40% 60% 55% 45%; }
+  100% { border-radius: 42% 58% 52% 48%; }
 }
 
+/* Flowbite accordion readability on dark cards */
+.dark [data-testid="flowbite-accordion-title"],
+.dark button[aria-expanded] {
+  color: #f1f5f9;
+}

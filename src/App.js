@@ -1,55 +1,51 @@
-import React,{ useState, useEffect } from 'react';
-
-import './App.css';
-import Navbar from './components/navbar';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import About from './components/about';
-import { IoIosArrowUp } from "react-icons/io";
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Education from './components/Education';
-
-
+import React, { useEffect, useState } from 'react'
+import { Button } from 'flowbite-react'
+import { HiArrowUp } from 'react-icons/hi'
+import './App.css'
+import Navbar from './components/navbar'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
+import About from './components/about'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Education from './components/Education'
+import CaseStudies from './components/CaseStudies'
 
 function App() {
-
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
-  };
+  const [scrollPosition, setScrollPosition] = useState(0)
 
   useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, []);
+    const handleScroll = () => setScrollPosition(window.pageYOffset)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <div className='flex flex-col h-screen'>
+    <div className="flex min-h-screen flex-col bg-slate-950 text-slate-200">
       <Navbar />
-      <main className='flex-1 '>
-    
-      {scrollPosition > 300 && 
-          <a href='#home' className='z-10 fixed right-10 bottom-10 w-14 h-14 bg-orange-700 rounded-md opacity-80 flex flex-row items-center justify-center hover:scale-105 transition-transform hover:opacity-70'>
-            <IoIosArrowUp size={40} className='text-slate-200'/>
-    
-          </a>
-      }
-        <Hero/>
+      <main className="flex-1">
+        {scrollPosition > 300 && (
+          <Button
+            as="a"
+            href="#home"
+            color="warning"
+            pill
+            className="fixed bottom-8 right-6 z-40 shadow-lg shadow-black/50"
+            aria-label="Back to top"
+          >
+            <HiArrowUp className="h-5 w-5" />
+          </Button>
+        )}
+        <Hero />
         <About />
-        <Education/>
+        <CaseStudies />
         <Projects />
-        <Contact/>
-        
+        <Education />
+        <Contact />
         <Footer />
       </main>
-      
     </div>
-  );  
+  )
 }
 
-export default App;
+export default App

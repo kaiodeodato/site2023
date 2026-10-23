@@ -1,89 +1,43 @@
-import React,{ useState } from 'react'
-import { GiHamburgerMenu } from "react-icons/gi";
+import React from 'react'
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from 'flowbite-react'
 
-export default function Navbar() {
+const links = [
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
+  { href: '#contact', label: 'Contact' },
+]
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-      };
-
-    const falseMenu = () => {
-        setIsMenuOpen(false);
-      };
-
+export default function AppNavbar() {
   return (
-    <div id='home' className='z-10  container  m-auto flex flex-row mt-5 rounded-full  items-center justify-between pt-4'>
-
-        <span className='text-2xl text-slate-700  hover:text-slate-400 transition-colors font-bold  pl-5'>Kaio D.</span>
-
-        <button
-        type="button"
-        onClick={toggleMenu}
-        className="block md:hidden focus:outline-none  text-slate-600  transition-colors "
-        >
-
-        {!isMenuOpen && (
-                <GiHamburgerMenu className="h-8 w-8 mr-3 hover:text-slate-400 transition-colors" />
-            )}      
-
-        </button>
-
-      <div
-        className={`${
-          isMenuOpen ? 'fixed top-0 right-0' : 'hidden'
-        }  flex justify-center items-center md:block md:w-auto `}
-        
-      >
-        <ul className=" bg-slate-300  md:bg-transparent w-48 md:w-auto h-screen md:h-auto  text-right text-slate-800 font-medium flex flex-col rounded-lg text-2xl md:text-lg lg:text-xl md:flex-row md:space-x-8  ">
-          <li>
-            <a
-              href="#home"
-              className="block py-2 pl-3 pr-4  transition-colors hover:text-slate-400 mt-44 md:mt-0"
-              onClick={falseMenu}
+    <header id="home" className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur-md">
+      <Navbar fluid className="section-shell !bg-transparent px-0 py-3">
+        <NavbarBrand href="#home">
+          <span className="self-center whitespace-nowrap text-xl font-bold text-slate-50">
+            Kaio D.
+          </span>
+        </NavbarBrand>
+        <NavbarToggle className="!border-slate-700 !text-slate-200 hover:!bg-slate-800" />
+        <NavbarCollapse className="!bg-slate-950 md:!bg-transparent">
+          {links.map((link) => (
+            <NavbarLink
+              key={link.href}
+              href={link.href}
+              className="!text-slate-300 hover:!text-orange-300 md:text-sm"
             >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className="block py-2 pl-3 pr-4 transition-colors hover:text-slate-400  mt-5 md:mt-0"
-              onClick={falseMenu}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#education"
-              className="block  py-2 pl-3 pr-4 transition-colors hover:text-slate-400  mt-5 md:mt-0"
-              onClick={falseMenu}
-            >
-              Education
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className="block py-2 pl-3 pr-4 transition-colors hover:text-slate-400  mt-5 md:mt-0"
-              onClick={falseMenu}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="block py-2 pl-3 pr-4 transition-colors hover:text-slate-400 mt-5 md:mt-0"
-              onClick={falseMenu}
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div> 
-    </div>
+              {link.label}
+            </NavbarLink>
+          ))}
+        </NavbarCollapse>
+      </Navbar>
+    </header>
   )
 }

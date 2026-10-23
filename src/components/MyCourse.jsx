@@ -1,20 +1,19 @@
 import React from 'react'
-import { FaCertificate } from "react-icons/fa";
 
-export default function MyCourse({ title, content, institution, certificate}) {
+export default function MyCourse({ title, content, certificate}) {
   return (
-    <div className='relative shadow-lg container w-44 md:w-60 h-52 bg-blue-900 hover:bg-blue-950 duration-500 grid grid-cols-1  items-center justify-center rounded-3xl'>
-
-      <div className='absolute top-0 right-0 translate-x-5 -translate-y-3 flex justify-center items-center'>
-        <FaCertificate className='mx-3 iconflip text-yellow-500 absolute ' size="40"/>
-        <FaCertificate className='mx-3  text-yellow-400 opacity-60' size="25"/>
-      </div>
-
-      <div className='cursor-default flex flex-col items-center justify-center m-auto text-slate-200 p-3'>
-        <h1 className='text-sm md:text-lg'>{title}</h1>
-        <span className='text-sm text-slate-300 text-center'>{content}</span>
-        {/* <span className='text-md md:text-xl mt-2'>{institution}</span> */}
-        <a className='flex flex-row items-center justify-center text-slate-200 mt-2' target='_blank' rel="noreferrer" href={certificate}>Link</a>  
+    <div className='w-full max-w-[15rem] min-h-[10.5rem] border border-orange-200 bg-orange-50/60 hover:bg-orange-50 duration-300 grid grid-cols-1 items-center justify-center rounded-xl p-3'>
+      <div className='cursor-default flex flex-col items-center justify-center m-auto text-slate-700 p-1'>
+        <h4 className='text-sm md:text-base font-semibold text-slate-800'>{title}</h4>
+        <span className='text-xs md:text-sm text-slate-500 text-center mt-2'>{content}</span>
+        <a
+          className='flex flex-row items-center justify-center text-orange-800 mt-3 text-sm font-medium hover:underline'
+          target='_blank'
+          rel="noreferrer"
+          href={certificate}
+        >
+          Course link
+        </a>
       </div>
     </div>
   )
